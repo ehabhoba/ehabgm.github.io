@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - EhabGMWeb</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">الرئيسية</a> |
+            <a asp-controller="Home" asp-action="About">من نحن</a> |
+            <a asp-controller="Home" asp-action="Contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - EhabGMWeb</p>
+    </footer>
+</body>
+</html>
